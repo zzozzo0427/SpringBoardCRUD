@@ -49,8 +49,8 @@ public class BoardController {
         return "redirect:list";
     }
 
-    @RequestMapping(value = "/deleteok/{id}", method = RequestMethod.GET)
-    public String deletePostOk(@PathVariable("id") int id) {
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
+    public String deletePost(@PathVariable("id") int id) {
         if(boardService.deleteBoard(id)== 0)
             System.out.println("데이터 삭제 실패 ");
         else

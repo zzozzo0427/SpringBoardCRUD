@@ -17,7 +17,7 @@
     <tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
     <tr><td><a href="/list">View All Records</a></td><td align="right"><input type="submit" value="Add Post"/></td></tr>
 </table>
-    <button type = "button" onclick= "location.href=list">go to list</button>
+    <button type = "button" onclick= "location.href='/list'">go to list</button>
     <button type = "submit"> submit </button>
 </form>
 

@@ -33,13 +33,15 @@ public class BoardDAO {
 	}
 
 	public int updateBoard(BoardVO vo) {
-		String sql = "update BOARD set title=" + vo.getTitle() + "',"
+		String sql = "update BOARD set "
 				+ "title='" + vo.getTitle() + "',"
 				+ "writer='" + vo.getWriter() + "',"
 				+ "content='" + vo.getContent() + "',"
-				+ "category='" + vo.getCategory() + "' where seq = " + vo.getSeq();
+				+ "category='" + vo.getCategory() + "' "
+				+ "where seq = " + vo.getSeq();
 		return jdbcTemplate.update(sql);
 	}
+
 
 	public BoardVO getBoard(int seq) {
 		String sql = "select * from BOARD where seq = " + seq;
@@ -47,7 +49,7 @@ public class BoardDAO {
 	}
 
 	public List<BoardVO> getBoardList() {
-		String sql = "selct * from BOARD order by regdate desc";
+		String sql = "select * from BOARD order by seq desc";
 		return jdbcTemplate.query(sql, new BoardRowMapper());
 	}
 	
