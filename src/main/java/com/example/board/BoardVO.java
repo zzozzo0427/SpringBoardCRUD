@@ -11,7 +11,7 @@ public class BoardVO {
 	private String writer;
 	private String content;
 	private Date regdate;
-	private double rating;
+	private float rating;
 	private String product;
 	private int cnt;
 	private String brand;
@@ -61,11 +61,11 @@ public class BoardVO {
 		this.category = category;
 	}
 
-	public double getRating() {
+	public float getRating() {
 		return rating;
 	}
 
-	public void setRating(double rating) {
+	public void setRating(float rating) {
 		this.rating = rating;
 	}
 

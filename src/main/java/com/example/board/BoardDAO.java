@@ -18,17 +18,20 @@ public class BoardDAO {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
-	public int insertBoard(BoardVO vo){
-		String sql = "insert into BOARD(category, brand, product, title, content, rating, writer) values ("
-				+ "'" + vo.getCategory() + "',"
-				+ "'" + vo.getBrand() + "',"
-				+ "'" + vo.getProduct() + "',"
-				+ "'" + vo.getTitle() + "',"
-				+ "'" + vo.getContent() + "',"
-				+ "'" + vo.getRating() + "',"
-				+ vo.getWriter() + ")";
-		return jdbcTemplate.update(sql);
+	public int insertBoard(BoardVO vo) {
+		String sql = "INSERT INTO BOARD(category, brand, product, title, content, rating, writer) VALUES (?, ?, ?, ?, ?, ?, ?)";
+		return jdbcTemplate.update(
+				sql,
+				vo.getCategory(),
+				vo.getBrand(),
+				vo.getProduct(),
+				vo.getTitle(),
+				vo.getContent(),
+				vo.getRating(),
+				vo.getWriter()
+		);
 	}
+
 
 
 	public int deleteBoard(int seq) {

@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1ebd05-2c5f-424c-8d09-2e62ef2e778f" name="Changes" comment="view.jsp">
+    <list default="true" id="bc1ebd05-2c5f-424c-8d09-2e62ef2e778f" name="Changes" comment="/board 바꾸끼 전">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addpostform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/BoardRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/BoardRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/BoardVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +205,8 @@
       <workItem from="1701437002105" duration="1517000" />
       <workItem from="1701489928730" duration="4537000" />
       <workItem from="1701495023725" duration="909000" />
-      <workItem from="1701495983526" duration="711000" />
+      <workItem from="1701495983526" duration="1045000" />
+      <workItem from="1701497034587" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="ta session">
       <option name="closed" value="true" />
@@ -244,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701494821930</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="/board 바꾸끼 전">
+      <option name="closed" value="true" />
+      <created>1701496991345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701496991345</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +267,8 @@
     <MESSAGE value="add button" />
     <MESSAGE value="와우~~~ 행복하다" />
     <MESSAGE value="view.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="view.jsp" />
+    <MESSAGE value="/board 바꾸끼 전" />
+    <option name="LAST_COMMIT_MESSAGE" value="/board 바꾸끼 전" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

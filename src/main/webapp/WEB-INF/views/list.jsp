@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>free board</title>
+<title>SOMINSA</title>
 <style>
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -76,7 +76,7 @@
 </c:forEach>
 </table>
 
-<br/><button type = "button" onclick="location.href='../board/add'">New Post</button>
+<br/><button type = "button" onclick="location.href='add/'">New Post</button>
 
 </body>
 </html>
