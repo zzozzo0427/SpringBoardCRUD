@@ -11,7 +11,10 @@ public class BoardVO {
 	private String writer;
 	private String content;
 	private Date regdate;
+	private double rating;
+	private String product;
 	private int cnt;
+	private String brand;
 	
 	public int getSeq() {
 		return seq;
@@ -56,5 +59,29 @@ public class BoardVO {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public double getRating() {
+		return rating;
+	}
+
+	public void setRating(double rating) {
+		this.rating = rating;
+	}
+
+	public String getProduct() {
+		return product;
+	}
+
+	public void setProduct(String product) {
+		this.product = product;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
 }

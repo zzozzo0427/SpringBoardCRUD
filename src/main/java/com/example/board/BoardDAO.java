@@ -19,13 +19,17 @@ public class BoardDAO {
 	JdbcTemplate jdbcTemplate;
 
 	public int insertBoard(BoardVO vo){
-		String sql = "insert into BOARD(title, writer, content, category) values ("
+		String sql = "insert into BOARD(category, brand, product, title, content, rating, writer) values ("
+				+ "'" + vo.getCategory() + "',"
+				+ "'" + vo.getBrand() + "',"
+				+ "'" + vo.getProduct() + "',"
 				+ "'" + vo.getTitle() + "',"
-				+ "'" + vo.getWriter() + "',"
 				+ "'" + vo.getContent() + "',"
-				+ "'" + vo.getCategory() + "')";
+				+ "'" + vo.getRating() + "',"
+				+ vo.getWriter() + ")";
 		return jdbcTemplate.update(sql);
 	}
+
 
 	public int deleteBoard(int seq) {
 		String sql = "delete from BOARD where seq = " + seq;
@@ -34,13 +38,18 @@ public class BoardDAO {
 
 	public int updateBoard(BoardVO vo) {
 		String sql = "update BOARD set "
+				+ "category='" + vo.getCategory() + "',"
+				+ "brand='" + vo.getBrand() + "',"
+				+ "product='" + vo.getProduct() + "',"
 				+ "title='" + vo.getTitle() + "',"
-				+ "writer='" + vo.getWriter() + "',"
 				+ "content='" + vo.getContent() + "',"
-				+ "category='" + vo.getCategory() + "' "
+				+ "rating=" + vo.getRating() + ", "
+				+ "writer='" + vo.getWriter() + "' "
 				+ "where seq = " + vo.getSeq();
 		return jdbcTemplate.update(sql);
 	}
+
+
 
 
 	public BoardVO getBoard(int seq) {

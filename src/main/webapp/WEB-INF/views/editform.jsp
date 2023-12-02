@@ -18,22 +18,14 @@
 <form:form modelAttribute="u" method="post" action="../editok">
 	<form:hidden path="seq"/>
 	<table id="edit">
-		<tr>
-			<td>Title:</td>
-			<td><form:input path="title"/></td>
-		</tr>
-		<tr>
-			<td>Writer:</td>
-			<td><form:input path="writer"/></td>
-		</tr>
-		<tr>
-			<td>Content:</td>
-			<td><form:textarea path="content" cols="50" rows="5"/></td>
-		</tr>
-		<tr>
-			<td>Category:</td>
-			<td><form:input path="category"/></td>
-		</tr>
+		<tr><td>Category:</td><td><form:input path="category"/></td></tr>
+		<tr><td>Brand:</td><td><form:input path="brand"/></td></tr>
+		<tr><td>Product:</td><td><form:input path="product"/></td></tr>
+		<tr><td>Title:</td><td><form:input path="title"/></td></tr>
+		<tr><td>Content:</td><td><form:textarea path="content" cols="50" rows="5"/></td></tr>
+		<tr><td>Rating:</td><td><form:input path="rating"/></td></tr>
+		<tr><td>Writer:</td><td><form:input path="writer"/></td></tr>
+
 		<tr>
 			<td colspan="2"><input type="submit" value="Edit Post"/>
 				<input type="button" value="Cancel" onclick="history.back()"/></td>

@@ -19,6 +19,7 @@
   padding: 8px;
   text-align:center;
 }
+
 #list tr:nth-child(even){background-color: #f2f2f2;}
 #list tr:hover {background-color: #ddd;}
 #list th {
@@ -36,36 +37,46 @@
 	}
 </script>
 </head>
+
+
 <body>
-<h1>제발</h1>
+<h1>SOMINSA</h1>
 
 <table id="list" width="90%">
 <tr>
 	<th>ID</th>
 	<th>Category</th>
+	<th>Brand</th>
+	<th>Product</th>
 	<th>Title</th>
-	<th>Writer</th>
 	<th>Content</th>
+	<th>Rating</th>
+	<th>Writer</th>
 	<th>Regdate</th>
 	<th>Edit</th>
 	<th>Delete</th>
+
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
-		<td>${u.seq}</td>
+		<td><a href="view/${u.seq}">${u.seq}</a></td>
 		<td>${u.category}</td>
+		<td>${u.brand}</td>
+		<td>${u.product}</td>
 		<td>${u.title}</td>
+		<td><a href="view/${u.seq}">${u.content}</a></td>
+		<td>${u.rating}</td>
 		<td>${u.writer}</td>
-		<td>${u.content}</td>
 		<td>${u.regdate}</td>
 
 		<td><a href="editform/${u.seq}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
 	</tr>
+
 </c:forEach>
 </table>
 
-<br/><button type = "button" onclick="location.href='board/add'">New Post</button>
+<br/><button type = "button" onclick="location.href='/board/add'">New Post</button>
 
 </body>
 </html>
